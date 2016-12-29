@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ignet Playground: Box Model</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link rel="stylesheet" href="css/normalize.min.css">-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--   todo: geometria, form + dok. eventów-->
+   
+    <div class="ipgContainer">
+        <div class="ipgBtnGroup">
+            <button id="ipgBtnStart">Start</button>
+            <button id="ipgBtnStop">Stop</button>
+            <button id="ipgBtnRemove">Puste</button>
+            <button id="ipgBtnDisable">Do wyłączenia</button>
+            <br>
+            <button id="ipgAnswer01">Odpowiedź 1</button>
+            <button id="ipgAnswer02">Odpowiedź 2</button>
+            <button id="ipgAnswer03">Odpowiedź 3</button>
+            <button id="ipgAnswer04">Odpowiedź 4</button>
+        </div>
+        <div class="ipgParent ipgSingle">
+            <p>Div-rodzic 50% szerokości</p>
+            <div class="ipgChild">
+                <p>Div-dziecko 90% szerokości (+ ramka i padding)</p>
+            </div>
+        </div>
+        <div class="ipgParent ipgMulti">
+            <div class="ipgTwins">
+                <p>Div-dziecko 50% szerokości (+ ramka i padding)</p>
+            </div>
+            <div class="ipgTwins">
+                <p>Div-dziecko 50% szerokości (+ ramka i padding)</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/event.js"></script>
+</body>
+
+</html>

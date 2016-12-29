@@ -1,0 +1,31 @@
+.ipgBtnGroup {
+    padding-bottom: 15px;
+}
+
+.ipgContainer {
+    padding: 15px;
+}
+
+.ipgParent {
+    width: 50%;
+    border: 5px solid #E18728;
+    float: left;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.ipgChild {
+    width: 90%;
+    padding: 15px;
+    border: 5px solid black;
+    margin: .5em auto;
+    box-sizing: border-box;
+}
+
+.ipgTwins {
+    width: 50%;
+    padding: 15px;
+    border: 5px solid black;
+    float: left;
+    box-sizing: border-box;
+}
