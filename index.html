@@ -7,13 +7,12 @@
     <title>Ignet Playground: Box Model</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--    <link rel="stylesheet" href="css/normalize.min.css">-->
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
-    <!--   todo: geometria, form + dok. eventów-->
     <div class="ipgContainer">
         <div class="ipgBtnGroup">
             <button id="ipgBtnStart">Start</button>
@@ -41,20 +40,36 @@
             </div>
         </div>
     </div>
+    <div class="img-content">
+        <img src="img/ipgPicture.png" class="ipgPicture" alt="" title="Tooltip przy użyciu JS">
+    </div>
     <div class="text-content">
-        <p class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque similique ex esse? Nobis aliquam quidem numquam, dolorem labore eaque? Ut quasi ab architecto, inventore voluptatibus, sint aperiam tempora voluptas ex totam maiores nulla, reiciendis illum. Fugit hic, voluptate qui facilis sunt, eveniet error quos iste sint eius neque commodi laboriosam.</p>
-        <p class="item">Numquam, reiciendis soluta ex aut animi libero, cum adipisci, iure laboriosam et, saepe rerum voluptas! In, eum, illum quisquam dolorum maxime earum ab a quam itaque reprehenderit dolorem deleniti, similique explicabo maiores cupiditate aperiam tenetur repellendus laboriosam quasi. Error incidunt, impedit voluptatem et blanditiis asperiores ut possimus, eos perferendis modi.</p>
-        <p class="item">Ullam delectus enim consequuntur modi recusandae odit eius nulla commodi unde praesentium nobis eaque, esse in rerum ab, porro suscipit architecto officia dolorum atque inventore fugiat id quam! A, dignissimos! Commodi sapiente eaque amet ea debitis eum iusto? Labore, natus doloremque expedita. Sequi cumque vitae minus, nesciunt quam quibusdam. Tempora.</p>
-        <p class="item">Libero doloribus dicta, accusamus at veniam esse, asperiores saepe, consequuntur ad dolorem maiores voluptatibus ut. A, ullam et? Facere illo esse deleniti, similique quam dolores eum rem, aut consequatur pariatur fugit veniam perferendis hic unde. Enim eligendi vero, maiores soluta sed, quas laboriosam magni facere accusamus consequatur harum iure nisi?</p>
-        <p class="item">Dolorem laboriosam, rem id ad. Vero fugit odio cumque! Est, ex sunt itaque adipisci enim nostrum quae quos fugiat magni fuga assumenda eius voluptatem officiis, corporis commodi aspernatur modi, blanditiis vero excepturi earum explicabo ut. Quasi nam molestiae neque delectus, atque repudiandae, debitis, voluptatum officiis ipsum doloremque qui corporis? Earum.</p>
-        <p class="item">Iure fugiat delectus, eos veritatis deserunt! Dolorem itaque nesciunt, consectetur quidem magnam quam labore inventore delectus dignissimos aliquam, quia illo amet fugiat dolores eligendi, mollitia, vero odio tenetur excepturi quisquam quos quis minus. Optio dolor, consectetur id! Possimus aliquam autem temporibus, debitis nesciunt corrupti. Fugiat enim sapiente ducimus, tenetur nemo.</p>
-        <p class="item">Itaque dignissimos unde labore excepturi quidem adipisci nemo at nesciunt atque fuga eveniet dolore modi temporibus ducimus aperiam, aliquam quia ullam facilis ea rem? Tenetur iste excepturi nihil repellat atque. Fuga, dolore dolorem aliquam itaque voluptatem eligendi voluptas veniam numquam praesentium, hic quo. Vel error ratione quasi quisquam magnam quod.</p>
-        <p class="item">Facilis, provident excepturi quibusdam, ipsum molestias nihil quisquam accusamus quam, omnis perspiciatis unde delectus eius non minus at eligendi. Excepturi fuga delectus, ipsa nisi dignissimos hic tenetur odio! Iure quia consectetur cupiditate quo, dignissimos libero sequi minima, quam incidunt perferendis blanditiis explicabo voluptatem, culpa fugit, voluptatibus aperiam ad nam a.</p>
-        <p class="item">Esse nemo repellendus, vitae quae saepe dolore tempora, incidunt minima pariatur minus! Qui delectus nostrum ipsa sed porro quas cupiditate dolore ad sit consectetur deleniti, aperiam error, atque iure nulla velit perferendis corrupti adipisci temporibus minus ipsum. Quia, beatae voluptatum eaque laborum ex inventore quasi, officiis tempore, perferendis harum qui.</p>
-        <p class="item">Rerum quibusdam ullam, vero sint non commodi debitis quia. Veritatis expedita provident illo velit soluta harum laborum repellat pariatur dolor animi, temporibus earum praesentium, tempore ducimus nemo alias dolorum nesciunt. Sint nobis odit quis omnis labore harum commodi, reprehenderit natus molestiae. Pariatur praesentium ipsam repellendus saepe! Quod, nulla explicabo facilis.</p>
+        <h2 title="Tooltip przy użyciu JS">Programowanie zorientowane obiektowo (OOP)</h2>
+        <hr>
+        <h3 data-title="Tooltip przy użyciu CSS">Klasa</h3>
+        <p class="item" data-title="Tooltip przy użyciu CSS">Schemat obiektów, które będą na jej podstawie tworzone.</p>
+        <h3>Obiekt</h3>
+        <p class="item">Obiekt utworzony na podstawie schematu klasy.</p>
+        <p class="item">Posiada "Dane".</p>
+        <h3>Właściwość</h3>
+        <p class="item">Zmienna przechowywana w każdym utworzonym obiekcie.</p>
+        <h3>Metoda</h3>
+        <p class="item">Funkcja dostępna w każdym utworzonym obiekcie z wykorzystaniem jego właściwości (przez dostęp)</p>
+        <h3>Konstruktor</h3>
+        <p class="item">Specjalna metoda obiektu wywoływana podczas jego tworzenia.</p>
+        <h3>Dziedziczenie</h3>
+        <p class="item">Możliwość współdzielenia funkconalności przez różne klasy.</p>
+        <h3>Enkapsulacja</h3> <small>Hermetyzacja</small>
+        <p class="item">Mechanizm ukrywania właściwości lub metod przed bezpośrednim dostępem.</p>
+        <h3>Abstrakcja</h3>
+        <p class="item">Koncepcja, aby udostępniane metody były ogólne, pozwalały wykonać odpowiednią akcję, bez wnikania w szczegóły.</p>
+        <p class="item">Łączy się z enkapsulacją.</p>
+        <h3>Polimorfizm</h3>
+        <p class="item">Mechanizm, który umożliwia tworzenie jednolitych klas, mimo innych implementacji pewnych metod.</p>
     </div>
     <script src="js/event.js"></script>
-    <script src="js/scroll.js"></script> 
+    <script src="js/scroll.js"></script>
+    <script src="js/tooltip.js"></script>
 </body>
 
 </html>

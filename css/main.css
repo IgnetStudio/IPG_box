@@ -34,7 +34,8 @@
 
 /* SCROLL TO TOP */
 
-.text-content {
+.text-content,
+.img-content {
     display: inline-block;
     padding-left: 15px;
     width: 50%;
@@ -62,4 +63,69 @@
 .ipgBackToTop.hidden {
     opacity: 0;
     visibility: hidden;
+}
+
+
+/* TOOLTIPS */
+
+.tooltip {
+    padding: 10px 15px 12px 15px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 1;
+    -webkit-transition: visibility 0.2s, opacity 0.2s;
+    transition: visibility 0.2s, opacity 0.2s;
+    position: absolute;
+    z-index: 9999;
+    font: 12px/1 Tahoma, Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.tooltip:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -6px;
+    border-style: solid;
+    border-width: 10px 6px 0 6px;
+    border-color: rgba(0, 0, 0, .8) transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+}
+
+.tooltip.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+[data-title] {
+  border-bottom: 2px dotted #444;
+  position: relative;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+
+[data-title]:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: -35px;
+  left: 0;
+  background: #444;
+  color: white;
+  padding: 5px;
+}
+
+[data-title]:hover::before {
+  content: "";
+  border-top: 10px solid #444;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  top: -8px;
+  left: 60px;
+  height: 10px;
 }
