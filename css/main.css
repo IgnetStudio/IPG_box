@@ -4,7 +4,7 @@
     padding-bottom: 15px;
 }
 
-.ipgContainer {
+.ipgContainer, .alt-content {
     padding: 15px;
 }
 
@@ -128,4 +128,8 @@
   top: -8px;
   left: 60px;
   height: 10px;
+}
+
+hr {
+    height: 5px;
 }

@@ -63,50 +63,64 @@ console.log(ipgPosition);
 
 console.log( document.elementFromPoint(399, 200) ); // element from 0,0 (x,y)
 
+// alternative
 
-// UI
+let btnGo = document.querySelector(".btnGo"); // local variable
+        // debugger;
+        btnGo.addEventListener("click", function () {
+            console.log("klik #1");
+        });
+        btnGo.addEventListener("click", () => { // lambda function
+            alert("klik #2");
+        });
+        btnGo.addEventListener("ownEvent", () => {
+            console.log("klik #3");
+        });
+        setTimeout(() => {
+            document.dispatchEvent(new CustomEvent("ownEvent"));
+        }, 2000); // miliseconds
 
+/*
 
-//elew
-//jurgieltnik
-//kirasjer
-//najmita
+UI
 
-//ipg.load
-//ipg.unload
-//ipg.resize
-//ipg.scroll
-//
-//// document
-//
-//ipg.onreadystatechange
-//ipg.DOMContentLoaded
-//
-//// form
-//
-//ipg.change
-//ipg.select
-//ipg.submit
-//ipg.reset
-//
-//// focus
-//
-//ipg.blur
-//ipg.focus
-//
-//// mouse
-//
-//ipg.click
-//ipg.dblclick
-//ipg.mousedown
-//ipg.mouseup
-//ipg.mouseenter
-//ipg.mouseleave
-//ipg.mouseover
-//ipg.mousemove
-//
-//// keyboard
-//
-//ipg.keydown
-//ipg.keyup
-//ipg.keypress
+ipg.load
+ipg.unload
+ipg.resize
+ipg.scroll
+
+document
+
+ipg.onreadystatechange
+ipg.DOMContentLoaded
+
+form
+
+ipg.change
+ipg.select
+ipg.submit
+ipg.reset
+
+focus
+
+ipg.blur
+ipg.focus
+
+mouse
+
+ipg.click
+ipg.dblclick
+ipg.mousedown
+ipg.mouseup
+ipg.mouseenter
+ipg.mouseleave
+ipg.mouseover
+ipg.mousemove
+
+keyboard
+
+ipg.keydown
+ipg.keyup
+ipg.keypress
+
+*/
